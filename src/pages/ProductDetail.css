@@ -1,0 +1,143 @@
+.product-detail-wrapper {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.product-detail {
+  position: relative;
+  z-index: 1;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #228B22;
+  color: #228B22;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.back-button:hover {
+  background: #228B22;
+  color: white;
+}
+
+.product-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.product-image-section {
+  position: sticky;
+  top: 120px;
+}
+
+.product-image-container {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(26, 90, 26, 0.2),
+              0 0 40px rgba(255, 140, 0, 0.1);
+  background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+  padding: 2rem;
+}
+
+.product-image-large {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 30px rgba(26, 90, 26, 0.15));
+}
+
+.product-image-shadow {
+  position: absolute;
+  bottom: -20px;
+  left: 10%;
+  right: 10%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  filter: blur(20px);
+  z-index: -1;
+}
+
+.product-info-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-detail-name {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #228B22;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.product-detail-description {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+.product-highlights {
+  margin: 2.5rem 0;
+}
+
+.highlights-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #228B22;
+  margin-bottom: 1.5rem;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 968px) {
+  .product-detail-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .product-image-section {
+    position: static;
+  }
+
+  .product-detail-name {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-detail-wrapper {
+    padding: 1.5rem 0;
+  }
+
+  .product-detail-name {
+    font-size: 2rem;
+  }
+
+  .product-detail-description {
+    font-size: 1.1rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}

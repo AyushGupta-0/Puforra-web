@@ -1,0 +1,124 @@
+.home {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.features-section {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, var(--off-white) 0%, var(--cream-light) 100%);
+}
+
+.features-aurora {
+  padding: 2rem 0;
+}
+
+.section-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #228B22;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: -1px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.products-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.view-all {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.about-snippet {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, var(--cream-light) 0%, var(--off-white) 100%);
+}
+
+.about-aurora {
+  padding: 2rem 0;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.9;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.btn {
+  padding: 1.125rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #228B22 0%, #32CD32 100%);
+  color: white;
+  box-shadow: 0 8px 24px rgba(34, 139, 34, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(34, 139, 34, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.95);
+  color: #228B22;
+  border: 2px solid #228B22;
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  background: #FF8C00;
+  color: white;
+  border-color: #FF8C00;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(255, 140, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .features-section,
+  .products-section,
+  .about-snippet {
+    padding: 3rem 0;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+  }
+}

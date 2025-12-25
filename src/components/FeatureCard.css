@@ -1,0 +1,39 @@
+.feature-card-wrapper {
+  height: 100%;
+}
+
+.feature-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #228B22;
+  margin: 0;
+}
+
+.feature-description {
+  color: #4a5568;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    gap: 1.25rem;
+  }
+
+  .feature-title {
+    font-size: 1.25rem;
+  }
+
+  .feature-description {
+    font-size: 0.95rem;
+  }
+}

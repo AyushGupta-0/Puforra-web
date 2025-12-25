@@ -1,0 +1,112 @@
+.aurora-background {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  background: linear-gradient(180deg, var(--cream-light) 0%, var(--off-white) 50%, var(--cream-light) 100%);
+}
+
+.aurora-content {
+  position: relative;
+  z-index: 1;
+}
+
+.aurora-gradient {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at top, rgba(34, 139, 34, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(255, 140, 0, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom left, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.aurora-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.3;
+  animation: aurora-float 20s ease-in-out infinite;
+  will-change: transform;
+}
+
+.aurora-orb-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(34, 139, 34, 0.15) 0%, rgba(50, 205, 50, 0.08) 30%, transparent 70%);
+  top: -300px;
+  left: -300px;
+  animation-delay: 0s;
+  animation-duration: 25s;
+}
+
+.aurora-orb-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.12) 0%, rgba(255, 165, 0, 0.08) 30%, transparent 70%);
+  top: 30%;
+  right: -200px;
+  animation-delay: 5s;
+  animation-duration: 30s;
+}
+
+.aurora-orb-3 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.12) 0%, rgba(255, 229, 92, 0.06) 30%, transparent 70%);
+  bottom: -200px;
+  left: 15%;
+  animation-delay: 10s;
+  animation-duration: 28s;
+}
+
+.aurora-orb-4 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(50, 205, 50, 0.1) 0%, rgba(34, 139, 34, 0.06) 30%, transparent 70%);
+  top: 60%;
+  left: 50%;
+  animation-delay: 15s;
+  animation-duration: 22s;
+}
+
+@keyframes aurora-float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  25% {
+    transform: translate(50px, -50px) scale(1.1) rotate(90deg);
+  }
+  50% {
+    transform: translate(-30px, 30px) scale(0.95) rotate(180deg);
+  }
+  75% {
+    transform: translate(40px, 20px) scale(1.05) rotate(270deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .aurora-orb {
+    filter: blur(70px);
+  }
+
+  .aurora-orb-1 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .aurora-orb-2 {
+    width: 350px;
+    height: 350px;
+  }
+
+  .aurora-orb-3 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .aurora-orb-4 {
+    width: 250px;
+    height: 250px;
+  }
+}
+

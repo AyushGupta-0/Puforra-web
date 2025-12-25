@@ -1,0 +1,134 @@
+.hero-wrapper {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: white;
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #228B22 0%, #FF8C00 50%, #FFD700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.hero-tagline {
+  font-size: 1.5rem;
+  color: #2d5016;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 1.125rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #228B22 0%, #32CD32 100%);
+  color: white;
+  box-shadow: 0 8px 24px rgba(34, 139, 34, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(34, 139, 34, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.95);
+  color: #228B22;
+  border-color: #228B22;
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  background: #FF8C00;
+  color: white;
+  border-color: #FF8C00;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(255, 140, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+  }
+
+  .hero-tagline {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
