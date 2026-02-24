@@ -15,8 +15,8 @@ function ProductCard({ product }) {
         <Link to={`/product/${product.slug}`} className="product-card">
           <div className="product-image-wrapper">
             <motion.img
-              src="/puffora-product-image.png"
-              alt={`${product.flavour} Makhana`}
+              src={product.image}
+              alt={`${product.name} - Saudi Dates`}
               className="product-image"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
@@ -27,14 +27,19 @@ function ProductCard({ product }) {
             <div className="product-image-overlay"></div>
           </div>
           <div className="product-info">
-            <h3 className="product-name">{product.flavour}</h3>
+            <h3 className="product-name">{product.name}</h3>
             <p className="product-description">{product.description.substring(0, 100)}...</p>
             <div className="product-sizes">
-              <span className="size-badge">{product.sizes[0].value}</span>
-              <span className="size-badge">{product.sizes[1].value}</span>
-              <span className="size-badge">{product.sizes[2].value}</span>
+              {product.sizes.map((s) => (
+                <span key={s.value} className="size-badge">{s.value}</span>
+              ))}
             </div>
-            <div className="product-price">From {product.sizes[0].price}</div>
+            <div className="product-price">
+              {product.sizes[0].price}
+              {product.sizes[0].deliveryNote && (
+                <span className="product-delivery-note"> {product.sizes[0].deliveryNote}</span>
+              )}
+            </div>
             <div className="product-cta">
               <span className="view-product-btn">View Product →</span>
             </div>

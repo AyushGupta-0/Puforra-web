@@ -13,15 +13,13 @@ function ProductDetail() {
   const { slug } = useParams();
   const navigate = useNavigate();
   const product = products.find(p => p.slug === slug);
-  const [selectedSize, setSelectedSize] = useState(product?.sizes[0].value || '50g');
+  const [selectedSize, setSelectedSize] = useState(product?.sizes?.[0]?.value || '500gm');
 
-  const highlights = [
-    { icon: 'organic', label: 'Organic' },
-    { icon: 'farm', label: 'Farm Direct' },
-    { icon: 'premium', label: 'Premium Quality' },
-    { icon: 'shelfLife', label: 'Long Shelf Life' },
-    { icon: 'shipping', label: 'Fast Shipping' },
-  ];
+  const iconOrder = ['organic', 'premium', 'freshness', 'packaging', 'shipping'];
+  const highlights = (product?.highlights || []).map((label, i) => ({
+    icon: iconOrder[i % iconOrder.length] || 'organic',
+    label
+  }));
 
   if (!product) {
     return (
@@ -56,8 +54,8 @@ function ProductDetail() {
             >
               <div className="product-image-container">
                 <motion.img
-                  src="/puffora-product-image.png"
-                  alt={`${product.flavour} Makhana`}
+                  src={product.image}
+                  alt={`${product.name} - Authentic Saudi Dates`}
                   className="product-image-large"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
@@ -75,7 +73,7 @@ function ProductDetail() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h1 className="product-detail-name">{product.flavour}</h1>
+              <h1 className="product-detail-name">{product.name}</h1>
               <p className="product-detail-description">{product.description}</p>
 
               <SizeSelector
@@ -85,9 +83,9 @@ function ProductDetail() {
               />
 
               <div className="product-highlights">
-                <h3 className="highlights-title">Product Highlights</h3>
+                <h3 className="highlights-title">Why This Pack</h3>
                 <div className="highlights-grid">
-                  {highlights.map((highlight, index) => (
+                  {highlights.length ? highlights.map((highlight, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, scale: 0.8 }}
@@ -100,11 +98,11 @@ function ProductDetail() {
                         label={highlight.label}
                       />
                     </motion.div>
-                  ))}
+                  )) : null}
                 </div>
               </div>
 
-              <WhatsAppButton flavour={product.flavour} size={selectedSize} />
+              <WhatsAppButton productName={product.name} size={selectedSize} />
             </motion.div>
           </div>
         </div>

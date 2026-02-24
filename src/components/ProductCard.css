@@ -87,6 +87,12 @@
   margin-bottom: 1rem;
 }
 
+.product-delivery-note {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
 .product-cta {
   margin-top: auto;
 }

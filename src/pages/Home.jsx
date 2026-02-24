@@ -25,28 +25,28 @@ function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Why Choose Puffora Naturals?
+              Why Our Saudi Dates?
             </motion.h2>
             <div className="features-grid">
               <FeatureCard
                 icon={<Icon name="organic" size={32} />}
-                title="Organic & Farm Direct"
-                description="Directly sourced from trusted farmers, ensuring the freshest and purest makhana."
+                title="100% Saudi Origin"
+                description="Sourced directly from trusted Arabian farms. Authentic origin, traceable quality."
               />
               <FeatureCard
-                icon={<Icon name="packaging" size={32} />}
-                title="Premium Packaging"
-                description="Premium packaging ensures longer freshness and maintains quality during transit."
+                icon={<Icon name="premium" size={32} />}
+                title="Premium Hand-Selected"
+                description="Every date is hand-selected for richness, softness, and natural sweetness."
               />
               <FeatureCard
                 icon={<Icon name="freshness" size={32} />}
-                title="Longer Freshness"
-                description="Our packaging technology keeps your makhana fresh and crispy for extended periods."
+                title="Naturally Sweet & Chemical-Free"
+                description="No additives. Just pure, naturally sweet dates — healthy bhi, tasty bhi."
               />
               <FeatureCard
-                icon={<Icon name="shipping" size={32} />}
-                title="Faster Shipping"
-                description="Quick and reliable delivery across regions, ensuring your makhana arrives fresh."
+                icon={<Icon name="packaging" size={32} />}
+                title="Hygienically Packed"
+                description="Hygienically packed to lock in freshness, nutrition, and authentic taste."
               />
             </div>
           </div>
@@ -62,7 +62,7 @@ function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            Featured Flavours
+            Premium Date Varieties
           </motion.h2>
           <ProductSlider products={featuredProducts} />
           <motion.div
@@ -73,7 +73,7 @@ function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Link to="/products" className="btn btn-secondary">
-              View All Products
+              View All Varieties
             </Link>
           </motion.div>
         </div>
@@ -98,9 +98,9 @@ function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              We are a Delhi-based brand with an innovative mindset, created to fight fake and low-quality 
-              makhana in the market. Our mission is to deliver purity and authenticity through direct farmer 
-              sourcing, premium packaging, and a customer-first approach.
+              We bring you authentic Saudi Arabian dates sourced directly from trusted Arabian farms. 
+              Every bite reflects purity, tradition, and uncompromised quality. We believe premium should 
+              not mean expensive — freshness, nutrition, and authentic taste in every bite.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

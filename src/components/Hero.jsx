@@ -19,7 +19,7 @@ function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Pure Desi. Pure Munch.
+              Healthy Bhi. Tasty Bhi.
             </motion.h1>
             <motion.p
               className="hero-tagline"
@@ -27,7 +27,7 @@ function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Organic, farm-direct premium makhana crafted with purity and care.
+              Authentic Saudi Arabian dates from trusted farms. Every bite reflects purity, tradition, and uncompromised quality — the true royal taste of Arabia.
             </motion.p>
             <motion.div
               className="hero-cta"
@@ -36,10 +36,10 @@ function Hero() {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <Link to="/products" className="btn btn-primary">
-                Shop Now
+                Shop Dates
               </Link>
               <Link to="/products" className="btn btn-secondary">
-                Explore Flavours
+                View Varieties
               </Link>
             </motion.div>
           </motion.div>

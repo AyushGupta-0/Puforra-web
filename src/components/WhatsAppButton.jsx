@@ -2,9 +2,10 @@ import { motion } from 'framer-motion';
 import Icon from './Icon';
 import './WhatsAppButton.css';
 
-function WhatsAppButton({ flavour, size }) {
+function WhatsAppButton({ productName, size, flavour }) {
+  const name = productName || flavour;
   const message = encodeURIComponent(
-    `Hi, I would like to buy Puffora Naturals - ${flavour} (${size}).`
+    `Hi, I would like to order Puffora Naturals Saudi Dates - ${name} (${size}).`
   );
   const whatsappUrl = `https://wa.me/9217017363?text=${message}`;
 

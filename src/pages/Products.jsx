@@ -23,7 +23,7 @@ function Products() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Premium Makhana in Delicious Flavours
+            Authentic Saudi Dates — Ajwa Jumbo, Mubroom, Kalmi Jumbo & All 3 Combo
           </motion.p>
         </div>
       </AuroraBackground>

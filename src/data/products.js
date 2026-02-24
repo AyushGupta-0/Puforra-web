@@ -1,61 +1,52 @@
 const products = [
   {
     id: 1,
-    name: 'Plain Salted',
-    slug: 'plain-salted',
-    flavour: 'Plain Salted',
-    description: 'Classic salted makhana with a perfect balance of taste. Our premium quality makhana is organically sourced and packed fresh for maximum crunch and flavor.',
-    highlights: ['Organic', 'Premium Quality', 'Fresh', 'Long Shelf Life'],
+    name: 'Ajwa Jumbo',
+    slug: 'ajwa-jumbo',
+    flavour: 'Ajwa Jumbo',
+    description: 'The crown jewel of Saudi dates. Premium Ajwa Jumbo — rich, soft, and naturally sweet. Sourced from trusted Arabian farms, 100% chemical-free and hygienically packed for the true royal taste of Arabia.',
+    highlights: ['100% Saudi Origin', 'Hand-Selected', 'Naturally Sweet', 'Hygienically Packed'],
     sizes: [
-      { value: '50g', price: '₹99' },
-      { value: '100g', price: '₹179' },
-      { value: '250g', price: '₹399' }
+      { value: '500gm', price: '₹499', deliveryNote: '+ Delivery' }
     ],
-    image: '/puffora-product-image.png'
+    image: '/IMG_5072.PNG'
   },
   {
     id: 2,
-    name: 'Peri-Peri',
-    slug: 'peri-peri',
-    flavour: 'Peri-Peri',
-    description: 'Spicy peri-peri flavored makhana that packs a punch. Made with authentic spices and premium quality makhana for an unforgettable snacking experience.',
-    highlights: ['Organic', 'Premium Quality', 'Fresh', 'Long Shelf Life'],
+    name: 'Mubroom',
+    slug: 'mubroom',
+    flavour: 'Mubroom',
+    description: 'Authentic Mubroom dates from Saudi Arabia — soft, naturally sweet, and packed with nutrition. Premium hand-selected quality, chemical-free and hygienically packed for freshness in every bite.',
+    highlights: ['100% Saudi Origin', 'Hand-Selected', 'Naturally Sweet', 'Hygienically Packed'],
     sizes: [
-      { value: '50g', price: '₹99' },
-      { value: '100g', price: '₹179' },
-      { value: '250g', price: '₹399' }
+      { value: '500gm', price: '₹399', deliveryNote: '+ Delivery' }
     ],
-    image: '/puffora-product-image.png'
+    image: '/IMG_5074.PNG'
   },
   {
     id: 3,
-    name: 'Tangy Tomato',
-    slug: 'tangy-tomato',
-    flavour: 'Tangy Tomato',
-    description: 'Tangy and zesty tomato flavored makhana. A perfect blend of tanginess and crunch that will keep you coming back for more.',
-    highlights: ['Organic', 'Premium Quality', 'Fresh', 'Long Shelf Life'],
+    name: 'Kalmi Jumbo',
+    slug: 'kalmi-jumbo',
+    flavour: 'Kalmi Jumbo',
+    description: 'Premium Kalmi Jumbo dates — rich, soft, and naturally sweet. Sourced directly from trusted Arabian farms. 100% Saudi origin, chemical-free, and hygienically packed. Healthy bhi, tasty bhi.',
+    highlights: ['100% Saudi Origin', 'Hand-Selected', 'Naturally Sweet', 'Hygienically Packed'],
     sizes: [
-      { value: '50g', price: '₹99' },
-      { value: '100g', price: '₹179' },
-      { value: '250g', price: '₹399' }
+      { value: '500gm', price: '₹349', deliveryNote: '+ Delivery' }
     ],
-    image: '/puffora-product-image.png'
+    image: '/IMG_5076.PNG'
   },
   {
     id: 4,
-    name: 'Masala',
-    slug: 'masala',
-    flavour: 'Masala',
-    description: 'Traditional Indian masala flavored makhana. Rich in spices and flavor, this is a crowd favorite that brings authentic taste to your snacking.',
-    highlights: ['Organic', 'Premium Quality', 'Fresh', 'Long Shelf Life'],
+    name: 'All 3 Combo',
+    slug: 'all-3-combo',
+    flavour: 'All 3 Combo',
+    description: 'Best value: three premium date packs of your choice. Ajwa Jumbo, Mubroom, or Kalmi Jumbo — mix or match. Free delivery. Freshness, nutrition, and authentic Saudi taste in every bite.',
+    highlights: ['100% Saudi Origin', 'Hand-Selected', 'Free Delivery', 'Best Value'],
     sizes: [
-      { value: '50g', price: '₹99' },
-      { value: '100g', price: '₹179' },
-      { value: '250g', price: '₹399' }
+      { value: '3 Packs', price: '₹1,299', deliveryNote: 'Free Delivery' }
     ],
-    image: '/puffora-product-image.png'
+    image: '/IMG_5079.PNG'
   }
 ];
 
 export default products;
-

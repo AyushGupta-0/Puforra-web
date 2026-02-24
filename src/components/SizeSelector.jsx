@@ -4,7 +4,7 @@ import './SizeSelector.css';
 function SizeSelector({ sizes, selectedSize, onSizeChange }) {
   return (
     <div className="size-selector">
-      <label className="size-label">Select Size:</label>
+      <label className="size-label">Select option:</label>
       <div className="size-options">
         {sizes.map((size) => (
           <motion.button
@@ -18,7 +18,7 @@ function SizeSelector({ sizes, selectedSize, onSizeChange }) {
             transition={{ duration: 0.3 }}
           >
             <span className="size-value">{size.value}</span>
-            <span className="size-price">{size.price}</span>
+            <span className="size-price">{size.price}{size.deliveryNote ? ` ${size.deliveryNote}` : ''}</span>
           </motion.button>
         ))}
       </div>
