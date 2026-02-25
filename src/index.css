@@ -6,21 +6,21 @@
 }
 
 :root {
-  /* Cream & date-brown – makhana off-white + khajoor brown */
-  --bg-gradient-top: #FFFBF7;
-  --bg-gradient-mid: #FDF8F3;
-  --bg-gradient-bottom: #FAF6F0;
-  --date-brown: #5C4033;
-  --date-brown-dark: #4A3728;
-  --date-brown-soft: #6B5344;
-  --text-primary: #5C4033;
-  --text-body: #4A3728;
-  --text-muted: #6B5B52;
-  --card-bg: rgba(255, 255, 255, 0.7);
-  --card-border: rgba(92, 64, 51, 0.2);
-  --border-subtle: rgba(92, 64, 51, 0.15);
-  --accent-glow: rgba(92, 64, 51, 0.12);
-  --accent-glow-strong: rgba(92, 64, 51, 0.22);
+  /* Cream (screenshot) + date colour from logo */
+  --bg-gradient-top: #F7F2EB;
+  --bg-gradient-mid: #F9F5EF;
+  --bg-gradient-bottom: #FAF7F2;
+  --date-brown: #8D5C43;
+  --date-brown-dark: #734A36;
+  --date-brown-soft: #9D6F55;
+  --text-primary: #8D5C43;
+  --text-body: #5C4033;
+  --text-muted: #7D6456;
+  --card-bg: rgba(255, 255, 255, 0.75);
+  --card-border: rgba(141, 92, 67, 0.25);
+  --border-subtle: rgba(141, 92, 67, 0.18);
+  --accent-glow: rgba(141, 92, 67, 0.12);
+  --accent-glow-strong: rgba(141, 92, 67, 0.2);
 
   --font-heading: 'Playfair Display', 'Cinzel', Georgia, serif;
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;

@@ -71,7 +71,7 @@
 .feature-item:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-  border-color: rgba(92, 64, 51, 0.28);
+  border-color: rgba(141, 92, 67, 0.28);
 }
 
 .feature-item .glass-icon {
