@@ -81,8 +81,8 @@
 }
 
 .contact-item:hover {
-  border-color: var(--gold-accent);
-  box-shadow: 0 0 24px var(--gold-glow);
+  border-color: var(--date-brown);
+  box-shadow: 0 0 24px var(--accent-glow);
   transform: translateX(4px);
 }
 
@@ -140,7 +140,7 @@
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--text-body);
 }
 
@@ -153,27 +153,27 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--gold-accent);
-  box-shadow: 0 0 0 3px var(--gold-glow);
+  border-color: var(--date-brown);
+  box-shadow: 0 0 0 3px var(--accent-glow);
 }
 
 .submit-button {
   padding: 12px 28px;
-  background: linear-gradient(135deg, var(--gold-accent) 0%, var(--gold-soft) 100%);
-  color: #111111;
+  background: linear-gradient(135deg, var(--date-brown) 0%, var(--date-brown-soft) 100%);
+  color: #FFFBF7;
   border: none;
   border-radius: 999px;
   font-size: 1.05rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(201, 162, 39, 0.2);
+  box-shadow: 0 4px 20px var(--accent-glow);
   font-family: var(--font-body);
 }
 
 .submit-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 0 25px var(--gold-glow-strong);
+  box-shadow: 0 0 25px var(--accent-glow-strong);
 }
 
 .submit-button:disabled {
@@ -190,7 +190,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
-  color: var(--gold-accent);
+  color: var(--date-brown);
 }
 
 .success-message h2 {

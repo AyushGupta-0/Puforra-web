@@ -74,14 +74,14 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--gold-accent) 0%, var(--gold-soft) 100%);
-  color: #111111;
-  box-shadow: 0 4px 20px rgba(201, 162, 39, 0.2);
+  background: linear-gradient(135deg, var(--date-brown) 0%, var(--date-brown-soft) 100%);
+  color: #FFFBF7;
+  box-shadow: 0 4px 20px var(--accent-glow);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 25px var(--gold-glow-strong);
+  box-shadow: 0 0 25px var(--accent-glow-strong);
 }
 
 .btn-secondary {
@@ -92,10 +92,10 @@
 }
 
 .btn-secondary:hover {
-  border-color: var(--gold-soft);
-  color: var(--gold-soft);
+  border-color: var(--date-brown-soft);
+  color: var(--date-brown-dark);
   transform: translateY(-2px);
-  box-shadow: 0 0 20px var(--gold-glow);
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 @media (max-width: 768px) {

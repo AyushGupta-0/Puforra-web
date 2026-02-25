@@ -11,7 +11,7 @@
 .back-button {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  color: var(--gold-accent);
+  color: var(--date-brown);
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -24,9 +24,9 @@
 }
 
 .back-button:hover {
-  border-color: var(--gold-accent);
-  color: var(--gold-soft);
-  box-shadow: 0 0 20px var(--gold-glow);
+  border-color: var(--date-brown);
+  color: var(--date-brown-soft);
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .product-detail-content {
@@ -48,7 +48,7 @@
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   padding: 2rem;
-  box-shadow: 0 40px 80px var(--gold-glow);
+  box-shadow: 0 40px 80px var(--accent-glow);
 }
 
 .product-image-large {
@@ -66,7 +66,7 @@
   left: 10%;
   right: 10%;
   height: 40px;
-  background: rgba(201, 162, 39, 0.15);
+  background: var(--accent-glow);
   border-radius: 50%;
   filter: blur(20px);
   z-index: -1;

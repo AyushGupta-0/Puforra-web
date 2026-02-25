@@ -1,11 +1,11 @@
 .footer {
-  background: linear-gradient(180deg, var(--bg-gradient-mid) 0%, var(--bg-gradient-top) 100%);
+  background: linear-gradient(180deg, var(--bg-gradient-bottom) 0%, #F5F0E8 100%);
+  border-top: 1px solid var(--card-border);
   color: var(--text-body);
   padding: 4rem 0 1.5rem;
   margin-top: 4rem;
   position: relative;
   overflow: hidden;
-  border-top: 1px solid var(--card-border);
 }
 
 .footer::before {
@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(ellipse at 30% 50%, var(--gold-glow) 0%, transparent 50%);
+  background: radial-gradient(ellipse at 30% 50%, var(--accent-glow) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .footer-title {
-  color: var(--gold-accent);
+  color: var(--date-brown);
   font-family: var(--font-heading);
   font-size: 1.25rem;
   font-weight: 600;
@@ -61,7 +61,7 @@
 }
 
 .footer-links a:hover {
-  color: var(--gold-accent);
+  color: var(--date-brown);
   transform: translateX(4px);
 }
 
@@ -81,7 +81,7 @@
 }
 
 .footer-contact-item:hover {
-  color: var(--gold-accent);
+  color: var(--date-brown);
   transform: translateX(4px);
 }
 

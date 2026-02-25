@@ -34,26 +34,26 @@
 }
 
 .size-option:hover {
-  border-color: var(--gold-accent);
-  box-shadow: 0 0 20px var(--gold-glow);
+  border-color: var(--date-brown);
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .size-option.selected {
-  border-color: var(--gold-accent);
-  background: rgba(201, 162, 39, 0.08);
-  box-shadow: 0 0 24px var(--gold-glow),
-              inset 0 0 20px rgba(201, 162, 39, 0.05);
+  border-color: var(--date-brown);
+  background: rgba(92, 64, 51, 0.06);
+  box-shadow: 0 0 24px var(--accent-glow),
+              inset 0 0 20px rgba(92, 64, 51, 0.04);
   transform: scale(1.02);
 }
 
 .size-value {
   font-weight: 700;
-  color: var(--gold-accent);
+  color: var(--date-brown);
   font-size: 1.2rem;
 }
 
 .size-price {
-  color: var(--gold-soft);
+  color: var(--date-brown-soft);
   font-weight: 700;
   font-size: 1.1rem;
 }

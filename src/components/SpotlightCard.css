@@ -20,7 +20,7 @@
   height: 200%;
   background: radial-gradient(
     circle,
-    var(--gold-glow) 0%,
+    var(--accent-glow) 0%,
     transparent 50%
   );
   opacity: 0;
@@ -31,8 +31,8 @@
 .spotlight-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.3),
-              0 0 24px var(--gold-glow);
-  border-color: rgba(201, 162, 39, 0.35);
+              0 0 24px var(--accent-glow);
+  border-color: rgba(92, 64, 51, 0.3);
 }
 
 .spotlight-card:hover .spotlight-glow {

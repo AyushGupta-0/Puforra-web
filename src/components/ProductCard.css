@@ -21,7 +21,7 @@
   border-radius: 1rem 1rem 0 0;
   background: var(--card-bg);
   border-bottom: 1px solid var(--border-subtle);
-  box-shadow: 0 40px 80px var(--gold-glow);
+  box-shadow: 0 40px 80px var(--accent-glow);
 }
 
 .product-image {
@@ -75,8 +75,8 @@
 }
 
 .size-badge {
-  background: rgba(201, 162, 39, 0.2);
-  color: var(--gold-accent);
+  background: rgba(92, 64, 51, 0.12);
+  color: var(--date-brown);
   padding: 0.375rem 0.75rem;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -87,7 +87,7 @@
 .product-price {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--gold-accent);
+  color: var(--date-brown);
   margin-bottom: 1rem;
 }
 
@@ -103,14 +103,14 @@
 
 .view-product-btn {
   display: inline-block;
-  color: var(--gold-soft);
+  color: var(--date-brown-soft);
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
 
 .product-card:hover .view-product-btn {
-  color: var(--gold-accent);
+  color: var(--date-brown);
   transform: translateX(4px);
 }
 
