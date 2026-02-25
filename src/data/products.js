@@ -9,7 +9,7 @@ const products = [
     sizes: [
       { value: '500gm', price: '₹499', deliveryNote: '+ Delivery' }
     ],
-    image: '/IMG_5072.PNG'
+    image: '/IMG_5108.PNG'
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const products = [
     sizes: [
       { value: '500gm', price: '₹399', deliveryNote: '+ Delivery' }
     ],
-    image: '/IMG_5074.PNG'
+    image: '/IMG_5106.PNG'
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const products = [
     sizes: [
       { value: '500gm', price: '₹349', deliveryNote: '+ Delivery' }
     ],
-    image: '/IMG_5076.PNG'
+    image: '/IMG_5107.PNG'
   },
   {
     id: 4,
