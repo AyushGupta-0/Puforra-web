@@ -10,7 +10,7 @@
 
 .features-section {
   padding: 6rem 0;
-  background: linear-gradient(180deg, var(--off-white) 0%, var(--cream-light) 100%);
+  background: transparent;
 }
 
 .features-aurora {
@@ -18,12 +18,13 @@
 }
 
 .section-title {
+  font-family: var(--font-heading);
   font-size: 2.75rem;
-  font-weight: 800;
-  color: #228B22;
+  font-weight: 600;
+  color: var(--text-primary);
   text-align: center;
   margin-bottom: 3rem;
-  letter-spacing: -1px;
+  letter-spacing: 0.5px;
 }
 
 .features-grid {
@@ -34,7 +35,7 @@
 
 .products-section {
   padding: 6rem 0;
-  background: white;
+  background: transparent;
 }
 
 .view-all {
@@ -44,7 +45,7 @@
 
 .about-snippet {
   padding: 6rem 0;
-  background: linear-gradient(180deg, var(--cream-light) 0%, var(--off-white) 100%);
+  background: transparent;
 }
 
 .about-aurora {
@@ -53,7 +54,7 @@
 
 .about-text {
   font-size: 1.2rem;
-  color: #4a5568;
+  color: var(--text-muted);
   line-height: 1.9;
   max-width: 800px;
   margin: 0 auto 2.5rem;
@@ -61,40 +62,40 @@
 }
 
 .btn {
-  padding: 1.125rem 2.5rem;
-  border-radius: 50px;
+  padding: 12px 28px;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
   display: inline-block;
-  border: 2px solid transparent;
+  border: none;
+  font-family: var(--font-body);
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #228B22 0%, #32CD32 100%);
-  color: white;
-  box-shadow: 0 8px 24px rgba(34, 139, 34, 0.3);
+  background: linear-gradient(135deg, var(--gold-accent) 0%, var(--gold-soft) 100%);
+  color: #111111;
+  box-shadow: 0 4px 20px rgba(201, 162, 39, 0.2);
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(34, 139, 34, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px var(--gold-glow-strong);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.95);
-  color: #228B22;
-  border: 2px solid #228B22;
-  backdrop-filter: blur(10px);
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
 }
 
 .btn-secondary:hover {
-  background: #FF8C00;
-  color: white;
-  border-color: #FF8C00;
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(255, 140, 0, 0.3);
+  border-color: var(--gold-soft);
+  color: var(--gold-soft);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px var(--gold-glow);
 }
 
 @media (max-width: 768px) {

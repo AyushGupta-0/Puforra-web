@@ -36,7 +36,7 @@
 }
 
 .whatsapp-button:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 12px 32px rgba(37, 211, 102, 0.5),
               0 0 30px rgba(37, 211, 102, 0.3);
 }

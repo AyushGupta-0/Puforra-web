@@ -12,25 +12,23 @@
 }
 
 .page-title {
+  font-family: var(--font-heading);
   font-size: 3.5rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #228B22 0%, #FF8C00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-weight: 600;
+  color: var(--text-primary);
   margin-bottom: 1rem;
-  letter-spacing: -1px;
+  letter-spacing: 0.5px;
 }
 
 .page-subtitle {
   font-size: 1.5rem;
-  color: #2d5016;
+  color: var(--text-muted);
   font-weight: 500;
 }
 
 .products-content {
   padding: 6rem 0;
-  background: linear-gradient(180deg, white 0%, var(--cream-light) 100%);
+  background: transparent;
 }
 
 @media (max-width: 768px) {

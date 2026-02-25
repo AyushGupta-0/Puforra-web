@@ -12,25 +12,23 @@
 }
 
 .page-title {
+  font-family: var(--font-heading);
   font-size: 3.5rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #228B22 0%, #FF8C00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-weight: 600;
+  color: var(--text-primary);
   margin-bottom: 1rem;
-  letter-spacing: -1px;
+  letter-spacing: 0.5px;
 }
 
 .page-subtitle {
   font-size: 1.5rem;
-  color: #2d5016;
+  color: var(--text-muted);
   font-weight: 500;
 }
 
 .about-content {
   padding: 6rem 0;
-  background: linear-gradient(180deg, white 0%, var(--cream-light) 100%);
+  background: transparent;
 }
 
 .about-section {
@@ -38,16 +36,17 @@
 }
 
 .section-heading {
+  font-family: var(--font-heading);
   font-size: 2.5rem;
-  font-weight: 700;
-  color: #228B22;
+  font-weight: 600;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.5px;
 }
 
 .about-text {
   font-size: 1.2rem;
-  color: #4a5568;
+  color: var(--text-muted);
   line-height: 1.9;
   margin-bottom: 1rem;
 }
@@ -62,17 +61,17 @@
   display: flex;
   gap: 2rem;
   padding: 2.5rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 245, 0.95) 100%);
-  border-radius: 20px;
-  border: 1px solid rgba(34, 139, 34, 0.1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  background: var(--card-bg);
+  border-radius: 1.25rem;
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
   transition: all 0.3s ease;
 }
 
 .feature-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(34, 139, 34, 0.15);
-  border-color: rgba(34, 139, 34, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(201, 162, 39, 0.35);
 }
 
 .feature-item .glass-icon {
@@ -80,14 +79,15 @@
 }
 
 .feature-item h3 {
+  font-family: var(--font-heading);
   font-size: 1.75rem;
-  font-weight: 700;
-  color: #228B22;
+  font-weight: 600;
+  color: var(--text-primary);
   margin-bottom: 0.75rem;
 }
 
 .feature-item p {
-  color: #4a5568;
+  color: var(--text-muted);
   line-height: 1.8;
   margin: 0;
   font-size: 1.1rem;

@@ -9,22 +9,24 @@
 }
 
 .back-button {
-  background: rgba(255, 255, 255, 0.95);
-  border: 2px solid #228B22;
-  color: #228B22;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--gold-accent);
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 2rem;
   padding: 0.75rem 1.5rem;
-  border-radius: 50px;
+  border-radius: 999px;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  font-family: var(--font-body);
 }
 
 .back-button:hover {
-  background: #228B22;
-  color: white;
+  border-color: var(--gold-accent);
+  color: var(--gold-soft);
+  box-shadow: 0 0 20px var(--gold-glow);
 }
 
 .product-detail-content {
@@ -41,21 +43,21 @@
 
 .product-image-container {
   position: relative;
-  border-radius: 24px;
+  border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(26, 90, 26, 0.2),
-              0 0 40px rgba(255, 140, 0, 0.1);
-  background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   padding: 2rem;
+  box-shadow: 0 40px 80px var(--gold-glow);
 }
 
 .product-image-large {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 20px;
+  border-radius: 1rem;
   object-fit: contain;
-  filter: drop-shadow(0 10px 30px rgba(26, 90, 26, 0.15));
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
 }
 
 .product-image-shadow {
@@ -64,7 +66,7 @@
   left: 10%;
   right: 10%;
   height: 40px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(201, 162, 39, 0.15);
   border-radius: 50%;
   filter: blur(20px);
   z-index: -1;
@@ -76,17 +78,18 @@
 }
 
 .product-detail-name {
+  font-family: var(--font-heading);
   font-size: 3rem;
-  font-weight: 800;
-  color: #228B22;
+  font-weight: 600;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
-  letter-spacing: -1px;
+  letter-spacing: 0.5px;
   line-height: 1.1;
 }
 
 .product-detail-description {
   font-size: 1.2rem;
-  color: #4a5568;
+  color: var(--text-muted);
   line-height: 1.9;
   margin-bottom: 2rem;
 }
@@ -96,10 +99,12 @@
 }
 
 .highlights-title {
+  font-family: var(--font-heading);
   font-size: 1.5rem;
-  font-weight: 700;
-  color: #228B22;
+  font-weight: 600;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
 }
 
 .highlights-grid {

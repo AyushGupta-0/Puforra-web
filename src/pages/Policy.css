@@ -3,14 +3,15 @@
 }
 
 .policy-hero {
-  background: linear-gradient(135deg, #f8f9f5 0%, #ffffff 100%);
+  background: transparent;
   padding: 4rem 2rem;
   text-align: center;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .policy-content {
   padding: 4rem 0;
-  background: white;
+  background: transparent;
 }
 
 .policy-section {
@@ -18,15 +19,17 @@
 }
 
 .policy-section h2 {
+  font-family: var(--font-heading);
   font-size: 1.75rem;
-  font-weight: 700;
-  color: #2d5016;
+  font-weight: 600;
+  color: var(--text-primary);
   margin-bottom: 1rem;
+  letter-spacing: 0.5px;
 }
 
 .policy-section p {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: var(--text-muted);
   line-height: 1.8;
   margin-bottom: 1rem;
 }
@@ -34,7 +37,7 @@
 .policy-section ul,
 .policy-section ol {
   font-size: 1.1rem;
-  color: #4a5568;
+  color: var(--text-muted);
   line-height: 1.8;
   margin-left: 2rem;
   margin-bottom: 1rem;
@@ -63,7 +66,3 @@
     font-size: 1rem;
   }
 }
-
-
-
-

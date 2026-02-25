@@ -1,37 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
-
-* {
+*
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  font-family: 'Inter', 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Luxury Arabian – Deep Emerald + Gold */
+  --bg-gradient-top: #0E2A1F;
+  --bg-gradient-mid: #123524;
+  --bg-gradient-bottom: #1B4D33;
+  --gold-accent: #C9A227;
+  --gold-soft: #E6C35A;
+  --gold-glow: rgba(201, 162, 39, 0.15);
+  --gold-glow-strong: rgba(201, 162, 39, 0.4);
+  --text-primary: #C9A227;
+  --text-body: #F5F5F5;
+  --text-muted: #D6D6D6;
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --card-border: rgba(201, 162, 39, 0.25);
+  --border-subtle: rgba(201, 162, 39, 0.2);
+
+  --font-heading: 'Playfair Display', 'Cinzel', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  font-family: var(--font-body);
   line-height: 1.5;
   font-weight: 400;
-  
-  /* Brand Color Palette - Authentic Saudi Dates / Premium Natural Foods */
-  --forest-green: #1a5a1a;
-  --forest-green-light: #228B22;
-  --forest-green-dark: #154015;
-  --saffron: #FF8C00;
-  --saffron-light: #FFA500;
-  --saffron-dark: #E67E00;
-  --cream: #FFF8E7;
-  --cream-dark: #F5F5DC;
-  --cream-light: #FFFEF8;
-  --gold: #FFD700;
-  --gold-light: #FFE55C;
-  --gold-dark: #E6C200;
-  --off-white: #FAF9F6;
-  --text-primary: #2d5016;
-  --text-secondary: #4a5568;
-  
-  color-scheme: light;
-  color: var(--forest-green);
-  background-color: var(--off-white);
-  
+  color: var(--text-body);
+  background: linear-gradient(180deg, var(--bg-gradient-top) 0%, var(--bg-gradient-mid) 50%, var(--bg-gradient-bottom) 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color-scheme: dark;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -42,12 +43,13 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: var(--off-white);
-  color: var(--forest-green);
+  color: var(--text-body);
+  background: transparent;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button {
@@ -55,41 +57,39 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  color: var(--forest-green);
-  letter-spacing: -0.5px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--text-primary);
 }
 
 p {
-  color: var(--text-secondary);
+  color: var(--text-muted);
   line-height: 1.7;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Selection color */
 ::selection {
-  background-color: var(--saffron);
-  color: white;
+  background-color: var(--gold-accent);
+  color: #111111;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--bg-gradient-mid);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, var(--forest-green-light) 0%, var(--saffron) 100%);
+  background: var(--gold-accent);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, var(--forest-green) 0%, var(--saffron) 100%);
+  background: var(--gold-soft);
 }

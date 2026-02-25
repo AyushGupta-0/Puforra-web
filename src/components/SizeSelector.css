@@ -5,7 +5,7 @@
 .size-label {
   display: block;
   font-weight: 600;
-  color: #228B22;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
@@ -20,39 +20,40 @@
   flex: 1;
   min-width: 120px;
   padding: 1.25rem 1.5rem;
-  border: 2px solid #e2e8e0;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 16px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  border-radius: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  color: var(--text-body);
 }
 
 .size-option:hover {
-  border-color: #228B22;
-  box-shadow: 0 8px 24px rgba(34, 139, 34, 0.15);
+  border-color: var(--gold-accent);
+  box-shadow: 0 0 20px var(--gold-glow);
 }
 
 .size-option.selected {
-  border-color: var(--forest-green);
-  background: linear-gradient(135deg, rgba(34, 139, 34, 0.1) 0%, rgba(255, 255, 255, 0.95) 100%);
-  box-shadow: 0 8px 24px rgba(34, 139, 34, 0.25),
-              inset 0 0 20px rgba(34, 139, 34, 0.05);
+  border-color: var(--gold-accent);
+  background: rgba(201, 162, 39, 0.08);
+  box-shadow: 0 0 24px var(--gold-glow),
+              inset 0 0 20px rgba(201, 162, 39, 0.05);
   transform: scale(1.02);
 }
 
 .size-value {
   font-weight: 700;
-  color: #228B22;
+  color: var(--gold-accent);
   font-size: 1.2rem;
 }
 
 .size-price {
-  color: #FF8C00;
+  color: var(--gold-soft);
   font-weight: 700;
   font-size: 1.1rem;
 }
