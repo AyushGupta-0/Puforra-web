@@ -9,7 +9,7 @@ function ProductSlider({ products }) {
 
   useEffect(() => {
     const updateVisibleCount = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 640) {
         setVisibleCount(1);
       } else if (window.innerWidth < 1024) {
         setVisibleCount(2);

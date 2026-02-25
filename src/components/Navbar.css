@@ -6,6 +6,7 @@
   top: 0;
   z-index: 1000;
   padding: 1rem 0;
+  padding-top: max(1rem, env(safe-area-inset-top));
   border-bottom: 1px solid var(--card-border);
   width: 100%;
 }
@@ -123,7 +124,8 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+/* Tablet & Mobile: hamburger menu */
+@media (max-width: 900px) {
   .navbar {
     padding: 0.75rem 0;
   }
@@ -140,6 +142,9 @@
   .hamburger {
     display: flex;
     z-index: 1002;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
   }
 
   .menu-overlay {
@@ -204,11 +209,11 @@
 
 @media (max-width: 480px) {
   .navbar-logo {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .navbar-menu {
-    width: 100%;
+    width: min(320px, 100%);
     right: -100%;
   }
 

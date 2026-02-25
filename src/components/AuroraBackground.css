@@ -75,11 +75,23 @@
 @media (max-width: 768px) {
   .aurora-orb {
     filter: blur(70px);
-    opacity: 0.15;
+    opacity: 0.14;
   }
 
-  .aurora-orb-1 { width: 350px; height: 350px; }
-  .aurora-orb-2 { width: 280px; height: 280px; }
-  .aurora-orb-3 { width: 250px; height: 250px; }
-  .aurora-orb-4 { width: 200px; height: 200px; }
+  .aurora-orb-1 { width: 320px; height: 320px; }
+  .aurora-orb-2 { width: 260px; height: 260px; }
+  .aurora-orb-3 { width: 230px; height: 230px; }
+  .aurora-orb-4 { width: 180px; height: 180px; }
+}
+
+@media (max-width: 640px) {
+  .aurora-orb {
+    filter: blur(60px);
+    opacity: 0.12;
+  }
+
+  .aurora-orb-1 { width: 280px; height: 280px; }
+  .aurora-orb-2 { width: 220px; height: 220px; }
+  .aurora-orb-3 { width: 200px; height: 200px; }
+  .aurora-orb-4 { width: 160px; height: 160px; }
 }

@@ -1,16 +1,18 @@
 .policy-page {
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .policy-hero {
   background: transparent;
-  padding: 4rem 2rem;
+  padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 4vw, 2rem);
   text-align: center;
   border-bottom: 1px solid var(--border-subtle);
 }
 
 .policy-content {
-  padding: 4rem 0;
+  padding: clamp(2rem, 4vw, 4rem) 0;
   background: transparent;
 }
 
@@ -20,7 +22,7 @@
 
 .policy-section h2 {
   font-family: var(--font-heading);
-  font-size: 1.75rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 1rem;
@@ -28,7 +30,7 @@
 }
 
 .policy-section p {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
   color: var(--text-muted);
   line-height: 1.8;
   margin-bottom: 1rem;
@@ -47,22 +49,9 @@
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  .policy-hero {
-    padding: 3rem 1rem;
-  }
-
-  .policy-content {
-    padding: 3rem 0;
-  }
-
-  .policy-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .policy-section p,
+@media (max-width: 640px) {
   .policy-section ul,
   .policy-section ol {
-    font-size: 1rem;
+    margin-left: 1.25rem;
   }
 }

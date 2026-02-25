@@ -45,11 +45,12 @@
   font-size: 1.75rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .whatsapp-button {
     width: 100%;
+    min-height: 44px;
     justify-content: center;
-    padding: 1.125rem 2rem;
-    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.05rem;
   }
 }

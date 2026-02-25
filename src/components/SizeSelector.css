@@ -18,7 +18,7 @@
 
 .size-option {
   flex: 1;
-  min-width: 120px;
+  min-width: 100px;
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--card-border);
   background: var(--card-bg);
@@ -58,12 +58,13 @@
   font-size: 1.1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .size-options {
     flex-direction: column;
   }
 
   .size-option {
     width: 100%;
+    min-width: 100%;
   }
 }
